@@ -1,0 +1,48 @@
+{
+    "development": {
+        "username": "postgres",
+        "password": "yanes6514",
+        "database": "crud",
+        "host": "127.0.0.1",
+        "dialect": "postgres",
+        "pool": {
+            "max": 5,
+            "min": 0,
+            "acquire": 30000,
+            "idle": 10000
+        },
+        "jwt": {
+            "key": "my_ultra_secret_key",
+            "expiresIn": 86400
+        },
+        "bcrypt": {
+            "salt": 10
+        }
+    },
+    "test": {
+        "username": "root",
+        "password": null,
+        "database": "database_test",
+        "host": "127.0.0.1",
+        "dialect": "postgres",
+        "pool": {
+            "max": 5,
+            "min": 0,
+            "acquire": 30000,
+            "idle": 10000
+        }
+    },
+    "production": {
+        "username": "root",
+        "password": null,
+        "database": "database_production",
+        "host": "127.0.0.1",
+        "dialect": "postgres",
+        "pool": {
+            "max": 5,
+            "min": 0,
+            "acquire": 30000,
+            "idle": 10000
+        }
+    }
+}
